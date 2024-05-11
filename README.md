@@ -1,5 +1,5 @@
 # BotMan
-Quick setup for BotManServer and BotManClient
+Quick setup for [BotManServer](https://github.com/Mahasvan/BotManServer) and [BotManClient](https://github.com/Mahasvan/BotManClient)
 
 ## Prerequisites
 - Docker Desktop
