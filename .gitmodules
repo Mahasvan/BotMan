@@ -1,0 +1,7 @@
+[submodule "BotManServer"]
+	path = BotManServer
+	url = https://github.com/Mahasvan/BotManServer.git
+
+[submodule "BotManClient"]
+	path = BotManClient
+	url = https://github.com/Mahasvan/BotManClient.git
