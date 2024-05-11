@@ -1,14 +1,10 @@
 version: '3.1'
 services:
-  client:
-    build:
-      context: ./BotManClient
-      dockerfile: Dockerfile
-    depends_on:
-      - "server"
   server:
-    build:
-      context: ./BotManServer
-      dockerfile: Dockerfile
+    build: ./BotManServer
     ports:
       - "8000:8000"
+  client:
+    build: ./BotManClient
+    depends_on:
+      - "server"
