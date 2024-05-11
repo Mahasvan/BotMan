@@ -4,7 +4,13 @@ services:
     build: ./BotManServer
     ports:
       - "8000:8000"
+    healthcheck:
+      test: ["CMD-SHELL", "netstat -an | grep -q 1234"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
   client:
     build: ./BotManClient
     depends_on:
-      - "server"
+      server:
+        condition: service_healthy
